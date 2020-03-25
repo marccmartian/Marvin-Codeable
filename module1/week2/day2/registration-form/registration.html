@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="" class="register-form">
+      <div class="form-row">
+        <label for="first-name">First name</label>
+        <input type="text" name="" id="first-name" required />
+      </div>
+      <div class="form-row">
+        <label for="last-name">Last name</label>
+        <input type="text" name="" id="last-name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name=""
+          id="email"
+          required
+          placeholder="myuser@dominio.com"
+        />
+      </div>
+      <div class="form-row">
+        <label for="zip_code">Zip code</label>
+        <input
+          type="text"
+          name=""
+          id="zip_code"
+          required
+          placeholder="123456"
+          pattern="[0-9]{6}"
+          maxlength="6"
+        />
+      </div>
+      <div class="form-row">
+        <label for="Password">Password</label>
+        <input type="password" name="" id="Password" required />
+      </div>
+      <div class="form-row">
+        <label for="practicing-status">Practicing status</label>
+        <select name="" id="practicing-status" required>
+          <option value="0">Practicing Lawyer</option>
+          <option value="1">Non practicing lawyer</option>
+          <option value="2">Retired lawyer</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="">Area of legal expertise</label>
+        <div class="expertise-check">
+          <input type="checkbox" name="" id="antitrust" />
+          <label for="antitrust">Antitrust</label>
+        </div>
+        <div class="expertise-check">
+          <input type="checkbox" name="" id="civil" />
+          <label for="civil">Civil Rights</label>
+        </div>
+        <div class="expertise-check">
+          <input type="checkbox" name="" id="immigration" />
+          <label for="immigration">Immigration</label>
+        </div>
+        <div class="expertise-check">
+          <input type="checkbox" name="" id="memes" />
+          <label for="memes">Memes</label>
+        </div>
+        <div class="expertise-check">
+          <input type="checkbox" name="" id="gaming" />
+          <label for="gaming">Gaming</label>
+        </div>
+        <div class="expertise-check">
+          <input type="checkbox" name="" id="work" />
+          <label for="work">Pretending to work</label>
+        </div>
+        <div class="expertise-check">
+          <input type="checkbox" name="" id="other" checked />
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="years_of_experience">Years of experience</label>
+        <input
+          type="number"
+          id="years_of_experience"
+          min="0"
+          max="60"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label for="languages">Language</label>
+        <select name="" id="languages" required multiple size="8">
+          <option value="es">Spanish</option>
+          <option value="en">English</option>
+          <option value="do">Dothraki</option>
+          <option value="ky">Kryptonese</option>
+          <option value="kl">Klingon</option>
+          <option value="vu">Vulcan</option>
+          <option value="ali">Alienese</option>
+          <option value="el">Elvish</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="phone_number">Phone number</label>
+        <input
+          type="tel"
+          name=""
+          id="phone_number"
+          placeholder="#########"
+          maxlength="9"
+        />
+      </div>
+      <fieldset class="form-row">
+        <legend>Ethnicity</legend>
+        <div class="ethnicity-radio">
+          <input type="radio" name="ethnicity" id="earthling" required />
+          <label for="earthling">Earthling</label>
+        </div>
+        <div class="ethnicity-radio">
+          <input type="radio" name="ethnicity" id="martian" required />
+          <label for="martian">Martian</label>
+        </div>
+        <div class="ethnicity-radio">
+          <input type="radio" name="ethnicity" id="asgardian" required />
+          <label for="asgardian">Asgardian</label>
+        </div>
+      </fieldset>
+      <div class="form-row-terms">
+        <input type="checkbox" name="" id="terms_of_use" required />
+        <label for="terms_of_use"
+          >I swear that I totally read the terms of use</label
+        >
+      </div>
+      <div class="form-row">
+        <input type="submit" value="Create your account" />
+      </div>
+    </form>
+  </body>
+</html>
