@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass";
+  height: 100vh;
+  margin: 0 150px;
+
+  display: flex;
+  align-items: center;
+}
+
+.article {
+  padding-top: 85px;
+  padding-right: 125px;
+  /* border: 1px solid black; */
+  height: 420px;
+}
+
+.article-number {
+  font-size: 28px;
+  height: 60px;
+  color: #0ad9c6;
+}
+.article-title {
+  font-size: 22px;
+  height: 90px;
+  line-height: 34px;
+}
+.article-text {
+  font-size: 16px;
+  color: #7a7a7a;
+  line-height: 28px;
+}
