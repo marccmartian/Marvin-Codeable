@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 70%;
+  /* height: 100vh; */
+  /* border: 1px solid black; */
+  margin: 0 auto;
+
+  display: grid;
+  gap: 24px;
+  grid:
+    ". header" 120px
+    "sidebar app" 450px
+    ". app" 150px
+    ". footer" 120px
+    /170px 1fr;
+}
+
+.header {
+  grid-area: header;
+  background-color: #c4c4c4;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ff0000;
+}
+
+.app {
+  grid-area: app;
+  background-color: #20e056;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #c4c4c4;
+}
